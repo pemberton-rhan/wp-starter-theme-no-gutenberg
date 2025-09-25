@@ -1,0 +1,77 @@
+section#services-carousel {
+	padding: 97px 0 125px;
+
+	.inner {
+		.intro {
+			text-align: center;
+			max-width: 800px;
+			margin: 0 auto 65px;
+		}
+
+		.carousel-outer {
+			position: relative;
+
+			.carousel-wrapper {
+				margin-bottom: 65px;
+				padding: 0 100px;
+
+				.carousel-item {
+					text-decoration: none;
+					padding: 0 16px;
+					display: flex;
+					justify-content: center;
+					align-items: flex-start;
+
+					.carousel-item-inner {
+						text-align: center;
+						width: 100%;
+						max-width: 281px;
+
+						h3 {
+							font-size: 26px;
+							line-height: 31.7px;
+						}
+					}
+					&:hover {
+						p.learn-more {
+							color: var(--text-dark);
+						}
+					}
+				}
+			}
+
+			.carousel-arrows {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+				pointer-events: none;
+
+				.arrow {
+					position: relative;
+					width: 50px;
+					height: 50px;
+					border-radius: 25px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					cursor: pointer;
+					pointer-events: all;
+
+					&:hover {
+						background-color: var(--bg-medium);
+					}
+				}
+			}
+		}
+
+		.cta-wrapper {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

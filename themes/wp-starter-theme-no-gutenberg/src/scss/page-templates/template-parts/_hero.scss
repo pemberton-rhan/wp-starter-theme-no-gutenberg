@@ -1,0 +1,44 @@
+section#hero {
+	.inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: end;
+		gap: 50px;
+		padding: 130px 0 100px;
+
+		.content {
+			max-width: 850px;
+
+			h1 {
+				font-size: 99px;
+			}
+
+			*:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.buttons-wrapper {
+			display: flex;
+			gap: 16px;
+			flex-shrink: 0;
+			width: max-content;
+		}
+	}
+
+	picture {
+		width: 100%;
+		max-width: 1800px;
+		height: 650px;
+		display: block;
+		margin: 0 auto;
+
+		img {
+			display: block;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			object-position: bottom;
+		}
+	}
+}
